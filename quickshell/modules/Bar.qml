@@ -3,25 +3,37 @@ import Quickshell.Wayland
 import QtQuick
 import QtQuick.Layouts
 import "../components"
+import "../themes"
 
 PanelWindow {
-    required property var modelData
-
-    screen: modelData
     anchors.top: true
     anchors.left: true
     anchors.right: true
-    implicitHeight: 30
-    color: "#1a1b26"
+    implicitHeight: 36
+    color: "transparent"
 
-    RowLayout {
+    Rectangle {
         anchors.fill: parent
-        anchors.margins: 8
+        color: CatppuccinMocha.barBg
 
-        Workspaces {}
+        Rectangle {
+            anchors.bottom: parent.bottom
+            width: parent.width
+            height: 1
+            color: CatppuccinMocha.surface
+        }
 
-        Item { Layout.fillWidth: true }
+        RowLayout {
+            anchors.fill: parent
+            anchors.leftMargin: 12
+            anchors.rightMargin: 12
+            spacing: 0
 
-        Clock {}
+            Workspaces {}
+
+            Item { Layout.fillWidth: true }
+
+            Clock {}
+        }
     }
 }

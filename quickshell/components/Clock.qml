@@ -1,8 +1,11 @@
 import QtQuick
 import "../services"
+import "../themes"
 
 Text {
-    color: "#a9b1d6"
-    font.pixelSize: 13
-    text: ClockService.time
+    color: CatppuccinMocha.text
+    font.pixelSize: 12
+    font.weight: Font.Medium
+    font.letterSpacing: 0.5
+    text: ClockService.time + "  ·  " + ClockService.date
 }
