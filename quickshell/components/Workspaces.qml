@@ -18,7 +18,7 @@ Row {
             Behavior on width { NumberAnimation { duration: 120; easing.type: Easing.OutCubic } }
             Behavior on color { ColorAnimation { duration: 120 } }
 
-            Text {
+            StyledText {
                 anchors.centerIn: parent
                 text: modelData.id
                 color: modelData.focused ? CatppuccinMocha.accentText : CatppuccinMocha.mutedText

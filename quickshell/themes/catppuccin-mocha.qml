@@ -3,6 +3,8 @@ import Quickshell
 import QtQuick
 
 Singleton {
+    readonly property string font:  "CaskaydiaCove Nerd Font"
+
     readonly property color barBg:      Qt.rgba( 24/255,  24/255,  37/255, 1) // mantle
     readonly property color surface:    Qt.rgba( 49/255,  50/255,  68/255, 1) // surface0
     readonly property color accent:     Qt.rgba(137/255, 180/255, 250/255, 1) // blue
