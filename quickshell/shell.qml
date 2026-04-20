@@ -2,5 +2,9 @@ import Quickshell
 import "./modules"
 
 Scope {
-    Bar {}
+    Variants {
+        model: Quickshell.screens
+
+        Bar {}
+    }
 }

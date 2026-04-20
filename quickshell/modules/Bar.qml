@@ -6,6 +6,10 @@ import "../components"
 import "../themes"
 
 PanelWindow {
+    id: root
+    required property var modelData
+    screen: modelData
+
     anchors.top: true
     anchors.left: true
     anchors.right: true
@@ -29,7 +33,7 @@ PanelWindow {
             anchors.rightMargin: 12
             spacing: 0
 
-            Workspaces {}
+            Workspaces { screen: root.screen }
 
             Item { Layout.fillWidth: true }
 
