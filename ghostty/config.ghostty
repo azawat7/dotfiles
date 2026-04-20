@@ -1,0 +1,5 @@
+command = /usr/bin/fish
+font-family = "JetBrainsMono Nerd Font"
+
+theme = catppuccin-mocha.conf
+background-opacity=0.8
