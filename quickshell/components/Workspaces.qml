@@ -13,7 +13,7 @@ Row {
         model: Hyprland.workspaces
 
         Rectangle {
-            visible: modelData.monitor === hyprMonitor
+            visible: hyprMonitor !== null && modelData.monitor === hyprMonitor
             readonly property bool activeOnScreen: hyprMonitor !== null && hyprMonitor.activeWorkspace !== null && hyprMonitor.activeWorkspace.id === modelData.id
 
             width: activeOnScreen ? 28 : 22
