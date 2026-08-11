@@ -15,6 +15,7 @@ matugen
 # System monitoring
 btop
 fastfetch
+brightnessctl
 
 # Compositor / Wayland
 hyprland
