@@ -1,0 +1,4 @@
+[mgr]
+prepend_keymap = [
+  { on = "<C-g>", run = "shell 'tintd gen %h' --block", desc = "Generate tintd theme from hovered file" },
+]
