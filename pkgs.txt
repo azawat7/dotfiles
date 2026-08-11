@@ -19,6 +19,9 @@ unzip
 fastfetch
 brightnessctl
 
+# File manager
+yazi
+
 # Compositor / Wayland
 hyprland
 hyprpolkitagent
