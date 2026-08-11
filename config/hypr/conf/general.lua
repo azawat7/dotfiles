@@ -1,5 +1,5 @@
 local colors = {}
-local colorsFile = os.getenv("HOME") .. "/.cache/matugen/hypr-colors.lua"
+local colorsFile = os.getenv("HOME") .. "/.cache/tintd/hypr-colors.lua"
 local colorsHandle = io.open(colorsFile, "r")
 if colorsHandle then
     colorsHandle:close()
