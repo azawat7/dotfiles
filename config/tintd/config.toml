@@ -21,3 +21,7 @@ post_hook = "pkill -SIGUSR1 fish || true"
 input_path = "./templates/hypr-colors.lua"
 output_path = "~/.cache/tintd/hypr-colors.lua"
 post_hook = "hyprctl reload || true"
+
+[templates.nvim]
+input_path = "./templates/nvim-colors.vim"
+output_path = "~/.cache/tintd/nvim-colors.vim"
