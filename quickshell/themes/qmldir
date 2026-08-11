@@ -1,2 +1,0 @@
-module themes
-singleton CatppuccinMocha 1.0 catppuccin-mocha.qml

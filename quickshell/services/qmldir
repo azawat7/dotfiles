@@ -1,2 +1,0 @@
-module services
-singleton ClockService 1.0 ClockService.qml
