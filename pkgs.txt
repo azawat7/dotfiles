@@ -12,6 +12,8 @@ lazygit
 github-cli
 python
 python-pip
+nodejs
+npm
 
 # System monitoring
 btop
