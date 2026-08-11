@@ -11,6 +11,8 @@ git
 lazygit
 github-cli
 matugen
+python
+python-pip
 
 # System monitoring
 btop
