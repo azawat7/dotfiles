@@ -18,3 +18,9 @@ hl.window_rule({
 
     no_focus = true,
 })
+
+hl.window_rule({
+    name = "kitty-translucent",
+    match = { class = "kitty" },
+    opacity = "0.9",
+})
