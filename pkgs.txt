@@ -21,6 +21,7 @@ brightnessctl
 hyprland
 hyprpolkitagent
 xdg-desktop-portal-hyprland
+awww
 
 # Audio
 pipewire
