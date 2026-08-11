@@ -1,0 +1,30 @@
+# Shell
+fish
+kitty
+
+# Editors
+nano
+neovim
+
+# Development
+git
+lazygit
+
+# System monitoring
+btop
+fastfetch
+
+# Compositor / Wayland
+hyprland
+hyprpolkitagent
+xdg-desktop-portal-hyprland
+
+# Audio
+pipewire
+
+# Fonts
+noto-fonts
+ttf-jetbrains-mono-nerd
+
+# Dotfiles tooling
+stow
