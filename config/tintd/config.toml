@@ -1,7 +1,5 @@
 [config]
 caching = false
-fallback_color = "#ffbf9b"
-prefer = "closest-to-fallback"
 
 [config.wallpaper]
 set = true
