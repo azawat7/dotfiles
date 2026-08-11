@@ -14,6 +14,7 @@ matugen
 
 # System monitoring
 btop
+unzip
 fastfetch
 brightnessctl
 
