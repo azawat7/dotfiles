@@ -1,3 +1,11 @@
+local colors = {}
+local colorsFile = os.getenv("HOME") .. "/.cache/matugen/hypr-colors.lua"
+local colorsHandle = io.open(colorsFile, "r")
+if colorsHandle then
+    colorsHandle:close()
+    colors = dofile(colorsFile)
+end
+
 hl.config({
     general = {
         gaps_in  = 5,
@@ -6,8 +14,8 @@ hl.config({
         border_size = 2,
 
         col = {
-            active_border   = { colors = {"rgba(33ccffee)", "rgba(00ff99ee)"}, angle = 45 },
-            inactive_border = "rgba(595959aa)",
+            active_border   = colors.active_border or "rgba(33ccffee)",
+            inactive_border = colors.inactive_border or "rgba(595959aa)",
         },
 
         resize_on_border = false,

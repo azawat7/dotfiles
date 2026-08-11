@@ -1,0 +1,21 @@
+[config]
+caching = false
+fallback_color = "#ffbf9b"
+prefer = "closest-to-fallback"
+
+[config.wallpaper]
+set = true
+command = "awww img --transition-type none {{ image }}"
+
+[templates.kitty]
+input_path = "./templates/kitty-colors.conf"
+output_path = "~/.cache/matugen/kitty-colors.conf"
+post_hook = "pkill -SIGUSR1 kitty || true"
+
+[templates.fish]
+input_path = "./templates/fish-colors.fish"
+output_path = "~/.cache/matugen/fish-colors.fish"
+
+[templates.hyprland]
+input_path = "./templates/hypr-colors.lua"
+output_path = "~/.cache/matugen/hypr-colors.lua"
