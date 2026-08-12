@@ -9,9 +9,24 @@ if ! command -v pacman >/dev/null 2>&1; then
     exit 1
 fi
 
+echo "==> Ensuring yay is installed"
+if ! command -v yay >/dev/null 2>&1; then
+    tmpdir="$(mktemp -d)"
+    sudo pacman -S --needed --noconfirm base-devel git
+    git clone --depth 1 https://aur.archlinux.org/yay.git "$tmpdir/yay"
+    (cd "$tmpdir/yay" && makepkg -si --noconfirm)
+    rm -rf "$tmpdir"
+fi
+
 echo "==> Installing packages from pkgs.txt"
-mapfile -t PACKAGES < <(sed '/^[[:space:]]*#/d;/^[[:space:]]*$/d' pkgs.txt)
+mapfile -t PACKAGES < <(sed '/^[[:space:]]*# AUR$/,$d' pkgs.txt | sed '/^[[:space:]]*#/d;/^[[:space:]]*$/d')
 sudo pacman -S --needed --noconfirm "${PACKAGES[@]}"
+
+echo "==> Installing AUR packages from pkgs.txt"
+mapfile -t AUR_PACKAGES < <(sed -n '/^[[:space:]]*# AUR$/,$p' pkgs.txt | sed '/^[[:space:]]*#/d;/^[[:space:]]*$/d')
+if ((${#AUR_PACKAGES[@]} > 0)); then
+    yay -S --needed --noconfirm "${AUR_PACKAGES[@]}"
+fi
 
 echo "==> Ensuring stow is installed"
 command -v stow >/dev/null 2>&1 || sudo pacman -S --needed --noconfirm stow
