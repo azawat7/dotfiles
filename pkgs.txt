@@ -25,6 +25,7 @@ brightnessctl
 yazi
 
 # Compositor / Wayland
+qt6-tools
 hyprland
 hyprpolkitagent
 xdg-desktop-portal-hyprland
@@ -39,3 +40,6 @@ ttf-jetbrains-mono-nerd
 
 # Dotfiles tooling
 stow
+
+# AUR
+skwd-wall

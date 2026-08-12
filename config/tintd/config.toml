@@ -3,7 +3,7 @@ caching = false
 
 [config.wallpaper]
 set = true
-command = "awww img --transition-type none {{ image }}"
+command = "awww img --transition-type fade --transition-duration 0.6 {{ image }}"
 
 [templates.kitty]
 input_path = "./templates/kitty-colors.conf"
