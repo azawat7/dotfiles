@@ -15,34 +15,41 @@ python-pip
 nodejs
 npm
 
-# System monitoring
+# System
 btop
-unzip
 fastfetch
+unzip
+stow
+
+# Hardware / Power
 brightnessctl
 upower
-
-# File manager
-yazi
-
-# Compositor / Wayland
-qt6-tools
-hyprland
-hyprpolkitagent
-xdg-desktop-portal-hyprland
-awww
-quickshell
+power-profiles-daemon
+python-gobject
 
 # Audio
 pipewire
+pipewire-audio
+pipewire-pulse
+wireplumber
+cava
+
+# Compositor / Wayland
+hyprland
+hyprpolkitagent
+quickshell
+qt6-tools
+xdg-desktop-portal-hyprland
+awww
+
+# Apps
+yazi
+librewolf
 
 # Fonts
 noto-fonts
 ttf-jetbrains-mono-nerd
 ttf-material-symbols-variable
-
-# Dotfiles tooling
-stow
 
 # AUR
 skwd-wall
