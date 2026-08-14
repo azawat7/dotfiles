@@ -48,6 +48,7 @@ librewolf
 
 # Fonts
 noto-fonts
+noto-fonts-cjk
 ttf-jetbrains-mono-nerd
 ttf-material-symbols-variable
 
