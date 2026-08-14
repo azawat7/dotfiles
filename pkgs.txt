@@ -20,6 +20,7 @@ btop
 unzip
 fastfetch
 brightnessctl
+upower
 
 # File manager
 yazi
@@ -38,6 +39,7 @@ pipewire
 # Fonts
 noto-fonts
 ttf-jetbrains-mono-nerd
+ttf-material-symbols-variable
 
 # Dotfiles tooling
 stow
