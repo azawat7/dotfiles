@@ -23,3 +23,7 @@ post_hook = "hyprctl reload || true"
 [templates.nvim]
 input_path = "./templates/nvim-colors.vim"
 output_path = "~/.cache/tintd/nvim-colors.vim"
+
+[templates.quickshell]
+input_path = "./templates/quickshell"
+output_path = "~/.cache/tintd/quickshell.json"
