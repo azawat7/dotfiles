@@ -2,6 +2,7 @@ hl.on("hyprland.start", function ()
    hl.exec_cmd("systemctl --user start hyprpolkitagent")
    hl.exec_cmd("awww-daemon")
    hl.exec_cmd("skwd-daemon")
+   hl.exec_cmd("quickshell -p ~/ditto-shell/")
 end)
 
 hl.env("XCURSOR_SIZE", "24")
