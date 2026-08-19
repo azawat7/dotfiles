@@ -54,3 +54,4 @@ ttf-material-symbols-variable
 
 # AUR
 skwd-wall
+vesktop
